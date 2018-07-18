@@ -126,6 +126,10 @@
 							$("#demo-mrn").html(obj.value);
 						}
 					});
+					patientApi.fetchAll({type: 'Oberservation',query:{
+	category:{
+		$or:["vital-signs"]})
+	}
 				}
 			});
 		}
